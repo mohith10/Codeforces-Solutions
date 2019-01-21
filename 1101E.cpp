@@ -1,8 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
+void 		fast()							{ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);}
 int main()
 {
+    fast();   //to boost up the code
     ll n;
     cin>>n;
     ll maxa=0,maxb=0;
@@ -21,7 +23,7 @@ int main()
         }
         else
         {
-            if((maxa<=a&&maxb<=b)||(maxa<=b&&maxb<=a))
+            if(maxa<=a&&maxb<=b)
                 cout<<"YES\n";
             else cout<<"NO\n";
         }
